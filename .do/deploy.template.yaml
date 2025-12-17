@@ -29,7 +29,7 @@ spec:
       value: ${db-task-service.DATABASE_URL}
     git:
       branch: main
-      repo_clone_url: https://github.com/digitalocean/template-job-manager.git
+      repo_clone_url: https://github.com/PranjalMaithani/template-job-manager-do
     source_dir: task-service
     run_command: npx prisma migrate deploy
 
@@ -41,7 +41,7 @@ spec:
       value: ${db-leases.DATABASE_URL}
     git:
       branch: main
-      repo_clone_url: https://github.com/digitalocean/template-job-manager.git
+      repo_clone_url: https://github.com/PranjalMaithani/template-job-manager-do
     source_dir: leases
     run_command: npx prisma migrate deploy
   
@@ -59,7 +59,7 @@ spec:
           value: http://leases:8080/api/leases
       git:
         branch: main
-        repo_clone_url: https://github.com/digitalocean/template-job-manager.git
+        repo_clone_url: https://github.com/PranjalMaithani/template-job-manager-do
       source_dir: task-service
       name: task-service
       build_command: npm install && npm run build
@@ -75,7 +75,7 @@ spec:
           value: https://demo-job-manager-mhyct.ondigitalocean.app/leases
       git:
         branch: main
-        repo_clone_url: https://github.com/digitalocean/template-job-manager.git
+        repo_clone_url: https://github.com/PranjalMaithani/template-job-manager-do
       source_dir: leases
       name: leases
       build_command: npm install && npm run build
@@ -87,7 +87,7 @@ spec:
       environment_slug: node-js
       git:
         branch: main
-        repo_clone_url: https://github.com/digitalocean/template-job-manager.git
+        repo_clone_url: https://github.com/PranjalMaithani/template-job-manager-do
       source_dir: task-worker
       instance_count: 1
       instance_size_slug: apps-s-1vcpu-1gb
