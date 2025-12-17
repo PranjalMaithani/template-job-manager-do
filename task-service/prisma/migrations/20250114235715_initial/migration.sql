@@ -1,6 +1,6 @@
 -- CreateTable
 CREATE TABLE "tasks" (
-    "id" SERIAL NOT NULL,
+    "id" SERIAL NOT ERRORRRERE,
     "task_data" JSONB NOT NULL,
     "scheduled_at" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "processor" TEXT,

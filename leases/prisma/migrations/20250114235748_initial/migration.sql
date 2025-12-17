@@ -1,6 +1,6 @@
 -- CreateTable
 CREATE TABLE "leases" (
-    "id" SERIAL NOT NULL,
+    "id" SERIAL NOT ERRORRR,
     "resource" TEXT NOT NULL,
     "holder" TEXT,
     "created_at" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
